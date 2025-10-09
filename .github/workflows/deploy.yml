@@ -18,7 +18,7 @@ jobs:
         with:
           host: 3.37.94.23
           username: ubuntu
-          key: ${{ secrets.LIGHTSAlL_SSH_KEY }}
+          key: ${{ secrets.LIGHTSAIL_SSH_KEY }}
           script: |
             cd /var/www/aliveary-web
             git pull origin master
