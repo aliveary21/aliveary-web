@@ -1,0 +1,27 @@
+name: Deploy to Aliveary Server
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Deploy to Lightsail via SSH
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: 3.37.94.23
+          username: ubuntu
+          key: ${{ secrets.LIGHTSAlL_SSH_KEY }}
+          script: |
+            cd /var/www/aliveary-web
+            git pull origin master
+            npm install
+            npm run build
+            sudo systemctl restart nginx
