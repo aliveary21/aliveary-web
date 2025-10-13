@@ -2,7 +2,8 @@ html,
 body {
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden;  ✅ 이 줄 삭제 or 주석처리 */
+    height: 100%;
 }
 
 .scroll-container {

@@ -1,0 +1,43 @@
+.extreme-page {
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 40px;
+    color: #fff;
+    background-color: #111;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(255, 103, 153, 0.25);
+    font-family: "Pretendard", sans-serif;
+}
+
+.extreme-page h1 {
+    color: #ff6799;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+}
+
+.extreme-page p {
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.extreme-page .tech {
+    color: #ffb6c1;
+    font-weight: 500;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 24px;
+    color: #ff6799;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #ff6799;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #ff6799;
+    color: #111;
+}

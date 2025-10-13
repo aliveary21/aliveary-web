@@ -1,36 +1,26 @@
 import React from "react";
 import "./styles/main.css";
-//import IntroScreen from "./components/intro/IntroScreen";
 import IntroTyping from "./components/intro/IntroTyping";
-
-
 import AboutSection from "./components/about/AboutSection";
-//import ProjectSection from "./components/projects/ProjectSection";
-//import ContactSection from "./components/contact/ContactSection";
+import ProjectSection from "./components/projects/ProjectSection";
 
 export default function App() {
     return (
         <div className="scroll-container">
+            {/* 인트로 */}
             <section className="page">
-                {/*<IntroScreen />*/}
-                <IntroTyping/>
+                <IntroTyping />
             </section>
 
-
-
+            {/* 소개 */}
             <section className="page">
                 <AboutSection />
             </section>
-            {/*
+
+            {/* 프로젝트 */}
             <section className="page">
                 <ProjectSection />
             </section>
-
-            <section className="page">
-                <ContactSection />
-            </section>
-            */}
         </div>
     );
 }
-

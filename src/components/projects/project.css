@@ -1,0 +1,85 @@
+/* 🎨 Projects Section 전체 영역 */
+.project-section {
+    background-color: #000; /* 흰 배경 방지 */
+    color: #fff;
+    padding: 100px 100px;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* 🔹 섹션 제목 */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #ff6799;
+    margin-bottom: 60px;
+}
+
+/* 🔹 프로젝트 카드 그리드 */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 반응형 */
+    gap: 80px;
+    padding: 0 80px;
+    justify-items: center;
+}
+
+/* 🔹 카드 기본 */
+.project-card {
+    background-color: #111;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.15);
+}
+
+/* 🔹 이미지(색상 블록) */
+.project-image {
+    height: 250px;
+    background-color: var(--project-color, #ff6799);
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.05);
+}
+
+/* 🔹 카드 내부 텍스트 */
+.project-info {
+    padding: 25px;
+    text-align: left;
+}
+
+.project-info h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.project-info p {
+    font-size: 0.95rem;
+    color: #ccc;
+    line-height: 1.4;
+}
+
+.project-info small {
+    display: block;
+    margin-top: 15px;
+    color: #aaa;
+    font-size: 0.85rem;
+}
+
+/* 🔹 하단 흰색 방지용 보정 */
+html,
+body {
+    background-color: #000; /* 항상 검은 배경 유지 */
+}
