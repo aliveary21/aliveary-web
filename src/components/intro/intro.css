@@ -1,0 +1,49 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0b0b0b;
+    color: #f5f5f5;
+}
+
+.typing-strong {
+    font-family: "Pretendard", sans-serif;
+    font-weight: 800;
+    font-size: 3.5rem;
+    color: #ffffff;
+    white-space: pre-wrap;
+    text-align: center;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+}
+
+.typing-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 풀스택 개발자 강조 색상 */
+.highlight {
+    color: #ff5c8d;
+}
+
+/* 커서 */
+.cursor {
+    display: inline-block;
+    width: 3px;
+    height: 3.8rem;
+    background-color: #ff5c8d;
+    margin-left: 3px;
+    animation: blink 0.8s infinite;
+    vertical-align: -5px;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
